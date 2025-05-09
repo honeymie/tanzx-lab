@@ -1,0 +1,106 @@
+/* 绿色环保主题样式 */
+:root {
+    --primary-green: #2E7D32;
+    --secondary-green: #81C784;
+    --background: #F1F8E9;
+    --accent: #558B2F;
+}
+
+body {
+    font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background);
+    color: #333;
+}
+
+nav {
+    background: var(--primary-green);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--accent);
+    border-bottom: 2px solid var(--secondary-green);
+    padding-bottom: 0.5em;
+}
+
+.paper-list, .member-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.paper-item {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-green);
+    background: #F8F9F7;
+}
+
+.paper-item a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.paper-item a:hover {
+    text-decoration: underline;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.member-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.member-card h3 {
+    color: var(--primary-green);
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
